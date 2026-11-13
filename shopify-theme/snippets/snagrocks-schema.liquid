@@ -1,0 +1,73 @@
+{%- comment -%}
+  Datos estructurados (schema.org, JSON-LD) de la marca SNAGROCKS para buscadores y asistentes de IA.
+  Uso: en layout/theme.liquid, justo antes de </head>, agrega:  {% render 'snagrocks-schema' %}
+  Solo describe la organización, la marca y el sitio. Los datos de cada producto (precio, disponibilidad)
+  los genera Savor por su cuenta con el filtro structured_data; no se duplican aquí.
+{%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "{{ shop.url }}/#organization",
+      "name": "AGRO OSCOR S.A.S.",
+      "legalName": "AGRO OSCOR S.A.S.",
+      "taxID": "901657781-2",
+      "duns": "987249766",
+      "url": "{{ shop.url }}",
+      {%- if settings.logo %}
+      "logo": {{ settings.logo | image_url: width: 600 | prepend: 'https:' | json }},
+      {%- endif %}
+      "description": "Empresa agroindustrial colombiana que produce los snacks SNAGROCKS de plátano y tubérculos andinos en su planta de Castilla, Pácora (Caldas).",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pácora",
+        "addressRegion": "Caldas",
+        "addressCountry": "CO"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+57-300-240-4788",
+        "contactType": "sales",
+        "areaServed": "CO",
+        "availableLanguage": ["es", "en"]
+      },
+      "brand": [
+        { "@id": "{{ shop.url }}/#brand" },
+        { "@type": "Brand", "name": "AGRO SNACKS", "url": "https://www.agrosnacks.com.co" }
+      ],
+      "sameAs": [
+        "https://www.agrosnacks.com.co",
+        "https://www.instagram.com/homemadesnackscol",
+        "https://www.tiktok.com/@agrosnackscol",
+        "https://www.facebook.com/agrosnackscol",
+        "https://co.pinterest.com/agrooscor2023",
+        "https://www.linkedin.com/in/agro-oscor-agro-snacks-516886395",
+        "https://github.com/agrooscor2023-cmd/snagrocks"
+      ]
+    },
+    {
+      "@type": "Brand",
+      "@id": "{{ shop.url }}/#brand",
+      "name": "SNAGROCKS",
+      "slogan": "Ingredientes reales — Un crunch diferente.",
+      "description": "Snacks colombianos de plátano verde, plátano maduro, yuca, batata, arracacha, papa y taro. Naturales, sin gluten, sin lactosa, sin soya y sin azúcar añadida.",
+      "url": "{{ shop.url }}"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{ shop.url }}/#website",
+      "name": "SNAGROCKS",
+      "url": "{{ shop.url }}",
+      "inLanguage": "es-CO",
+      "publisher": { "@id": "{{ shop.url }}/#organization" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "{{ shop.url }}{{ routes.search_url }}?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}
+</script>
