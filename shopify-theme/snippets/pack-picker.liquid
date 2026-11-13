@@ -1,0 +1,169 @@
+{%- doc -%}
+  Selector de packs por volumen (estilo tarjetas) para productos con la opción "Presentación".
+  Muestra precio, precio por bolsa, ahorro y la etiqueta "Mejor valor" en el pack más grande.
+
+  @param {object} product_resource - The product object.
+{%- enddoc -%}
+
+{% liquid
+  assign block_settings = block.settings
+  assign unit_one = 'bolsa'
+  assign unit_many = 'bolsas'
+  assign title_down = product_resource.title | downcase
+  if title_down contains 'tarro'
+    assign unit_one = 'tarro'
+    assign unit_many = 'tarros'
+  endif
+%}
+<variant-picker
+  class="variant-picker spacing-style variant-picker--left pack-picker"
+  style="{% render 'spacing-style', settings: block_settings %}"
+  data-section-id="{{ section.id }}"
+  data-product-id="{{ product_resource.id }}"
+  data-block-id="{{ block.id }}"
+  data-product-url="{{ product_resource.url }}"
+  ref="mainVariantPicker"
+  {% if product.id == product_resource.id %}
+    data-template-product-match="true"
+  {% endif %}
+  {{ block.shopify_attributes }}
+>
+  <form class="variant-picker__form">
+    {%- for product_option in product_resource.options_with_values -%}
+      <fieldset class="variant-option variant-option--buttons variant-option--packs">
+        <legend>{{ product_option.name | escape }}</legend>
+        {%- liquid
+          assign base_val = product_option.values.first
+          assign base_price = base_val.variant.price
+          assign base_g = base_val.name | remove: 'Tarro ' | remove: ' g' | remove: '.' | plus: 0
+        -%}
+        {%- for product_option_value in product_option.values -%}
+          {%- liquid
+            assign v = product_option_value.variant
+            assign n = product_option_value.name | remove: 'Pack x' | remove: ' bolsas' | remove: ' bolsa' | remove: ' tarros' | remove: ' tarro' | strip | plus: 0
+            if n < 1
+              assign n = 1
+            endif
+            assign ref = 0
+            if n > 1
+              assign ref = base_price | times: n
+            else
+              assign g = product_option_value.name | remove: 'Tarro ' | remove: ' g' | remove: '.' | plus: 0
+              if g > 0 and base_g > 0 and g != base_g
+                assign ref = base_price | times: g | divided_by: base_g
+              endif
+            endif
+            assign saving = 0
+            if v and ref > v.price
+              assign saving = ref | minus: v.price
+            endif
+          -%}
+          <label class="variant-option__button-label pack-card">
+            <input
+              type="radio"
+              name="{{ product_option.name | escape }}-{{ block.id }}-{{ product_resource.id }}"
+              value="{{ product_option_value | escape }}"
+              aria-label="{{ product_option_value.name }}"
+              {% if product_option_value.available == false %}
+                aria-disabled="true"
+              {% endif %}
+              data-input-id="{{ product_option.position }}-{{ forloop.index0 }}"
+              data-option-value-id="{{ product_option_value.id }}"
+              data-option-available="{{ product_option_value.available }}"
+              data-connected-product-url="{{ product_option_value.product_url }}"
+              {% if v.id %}
+                data-variant-id="{{ v.id }}"
+              {% endif %}
+              {% if product_option_value.selected %}
+                checked
+              {% endif %}
+            >
+            {%- if forloop.last and saving > 0 -%}
+              <span class="pack-card__badge">Mejor valor</span>
+            {%- endif -%}
+            <span class="pack-card__title">
+              {{- product_option_value | escape -}}
+              {%- if n > 1 %} ({{ n }} {{ unit_many }}){% endif -%}
+            </span>
+            {%- if v -%}
+              <span class="pack-card__price">{{ v.price | money }}</span>
+              {%- if n > 1 or saving > 0 -%}
+                <span class="pack-card__unit">
+                  {%- if n > 1 -%}
+                    {{ v.price | divided_by: n | money }} por {{ unit_one }}
+                  {%- endif -%}
+                  {%- if n > 1 and saving > 0 %} · {% endif -%}
+                  {%- if saving > 0 -%}
+                    <strong>Ahorras {{ saving | money }}</strong>
+                  {%- endif -%}
+                </span>
+              {%- endif -%}
+            {%- endif -%}
+          </label>
+        {%- endfor -%}
+      </fieldset>
+    {%- endfor -%}
+
+    <script type="application/json">
+      {{ product_resource.selected_or_first_available_variant | json }}
+    </script>
+  </form>
+</variant-picker>
+
+{% stylesheet %}
+  .variant-option--packs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .variant-option--packs .pack-card {
+    flex: 1 1 100%;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+    min-height: auto;
+    padding: 14px 12px;
+    white-space: normal;
+    text-align: center;
+    border-width: 2px;
+    border-radius: 10px;
+  }
+
+  .pack-card__title {
+    font-size: 1.05em;
+    font-weight: 700;
+  }
+
+  .pack-card__price {
+    font-size: 1.6em;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
+  .pack-card__unit {
+    font-size: 0.9em;
+  }
+
+  .pack-card__unit strong {
+    font-weight: 800;
+  }
+
+  .pack-card__badge {
+    position: absolute;
+    top: 22px;
+    left: -46px;
+    transform: rotate(-40deg);
+    background: #be0405;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    width: 170px;
+    text-align: center;
+    padding: 3px 0;
+    pointer-events: none;
+  }
+{% endstylesheet %}

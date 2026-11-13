@@ -1,0 +1,9 @@
+# Personalizaciones de Savor
+
+Copia de los tres archivos recuperados del tema «Savor — Packs SNAGROCKS (borrador)». No incluye el tema completo ni constituye una versión probada para producción.
+
+- `snippets/pack-picker.liquid`: selector de presentaciones.
+- `blocks/variant-picker.liquid`: integración con el selector habitual de Savor.
+- `sections/snagrocks-crunch.liquid`: sección Elige tu crunch.
+
+Conserva estas rutas al copiarlos. Dependen del código, estilos, componentes y traducciones de una versión compatible de Savor. Consulta `../docs/README.md` antes de instalarlos.
