@@ -1,0 +1,10 @@
+{%- layout none -%}
+{%- comment -%}
+  Muestra la página "llms" como texto plano (Markdown) para asistentes de IA, sin el diseño de la tienda.
+  El contenido se sigue editando en Tienda online → Páginas → llms; esta plantilla solo lo convierte.
+  Para usarla: asigna la plantilla "llms" a esa página y crea la redirección /llms.txt → /pages/llms.
+{%- endcomment -%}
+{%- capture nl %}
+{% endcapture -%}
+{%- assign t = page.content | replace: '<h1>', '# ' | replace: '</h1>', nl | replace: '<h2>', '## ' | replace: '</h2>', nl | replace: '<li>', '- ' | replace: '</li>', nl | replace: '</p>', nl | replace: '</ul>', nl | strip_html | replace: '&amp;', '&' | replace: '&nbsp;', ' ' -%}
+{{ t }}

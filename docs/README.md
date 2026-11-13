@@ -29,6 +29,10 @@ Estos archivos se exportaron del borrador de packs, sin modificar su código ni 
 - Ejemplo: `SNG-PLV-C-NAT-BT70-GP-N`.
 - Cada variante lleva su EAN-13 junto al SKU.
 
+## Visibilidad en IA
+
+La lista de chequeo para buscadores y asistentes de IA está en `visibilidad-ia.md`.
+
 ## Publicación segura
 
 Incluye únicamente estas personalizaciones y documentación. No añadas configuraciones privadas, credenciales, datos de clientes, pedidos, costos ni el tema completo.
