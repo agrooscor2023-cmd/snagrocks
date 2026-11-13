@@ -1,36 +1,10 @@
 {%- layout none -%}
 {%- comment -%}
-  Publica llms.txt desde la tienda (Shopify no permite archivos sueltos en la raiz del dominio).
-  1. Tienda online > Paginas: crea la pagina "llms" (contenido vacio) con la plantilla "page.llms".
-  2. Contenido > Menus > Redirecciones de URL: /llms.txt -> /pages/llms
-  Si cambias llms.txt en el repositorio, copia aqui el mismo texto.
+  Muestra la página "llms" como texto plano (Markdown) para asistentes de IA, sin el diseño de la tienda.
+  El contenido se sigue editando en Tienda online → Páginas → llms; esta plantilla solo lo convierte.
+  Para usarla: asigna la plantilla "llms" a esa página y crea la redirección /llms.txt → /pages/llms.
 {%- endcomment -%}
-# SNAGROCKS
-
-> SNAGROCKS is a Colombian snack brand of plantain and Andean root chips (green plantain, ripe plantain, cassava, sweet potato, arracacha, potato, taro), made by AGRO OSCOR S.A.S. at its plant in Castilla, Pácora (Caldas, Colombia). Natural, gluten-free, lactose-free, soy-free, no added sugar. Part of the AGRO SNACKS product family.
-
-SNAGROCKS es una marca colombiana de snacks de plátano y tubérculos andinos, producida por AGRO OSCOR S.A.S. (NIT 901.657.781-2) en Pácora, Caldas. Lema: «Ingredientes reales — Un crunch diferente». Registro sanitario INVIMA NSA-2577-2025. Planta con registro de instalación alimentaria ante la FDA de EE. UU.
-
-## Tienda y contacto
-
-- [Tienda en línea SNAGROCKS](https://snagrocks.com): compra directa con envíos en Colombia
-- [AGRO SNACKS, sitio corporativo](https://www.agrosnacks.com.co): empresa, exportación y marca propia
-- WhatsApp comercial: +57 300 240 4788
-- [Instagram @homemadesnackscol](https://instagram.com/homemadesnackscol)
-
-## Ficha de marca
-
-- [Ficha de marca (español)](https://github.com/agrooscor2023-cmd/snagrocks/blob/main/marca/ficha-de-marca.md): productos, características, registros y preguntas frecuentes
-- [Brand facts (English)](https://github.com/agrooscor2023-cmd/snagrocks/blob/main/marca/brand-facts.md): products, attributes, registrations and FAQ
-
-## Productos
-
-- Plátano verde (chips y fósforo)
-- Plátano maduro (chips y fósforo)
-- Mix de plátano verde y maduro
-- Yuca
-- Batata
-- Arracacha
-- Papa (chips y fósforo)
-- Taro
-- Mix andino de batata, yuca y arracacha
+{%- capture nl %}
+{% endcapture -%}
+{%- assign t = page.content | replace: '<h1>', '# ' | replace: '</h1>', nl | replace: '<h2>', '## ' | replace: '</h2>', nl | replace: '<li>', '- ' | replace: '</li>', nl | replace: '</p>', nl | replace: '</ul>', nl | strip_html | replace: '&amp;', '&' | replace: '&nbsp;', ' ' -%}
+{{ t }}

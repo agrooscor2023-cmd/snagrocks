@@ -1,71 +1,62 @@
 # Ficha de marca SNAGROCKS
 
-## Datos de la empresa
+> Fuente oficial: [snagrocks.com](https://snagrocks.com). Si algún dato de este repositorio difiere de la tienda, prevalece la tienda.
 
-- **Marca:** SNAGROCKS (familia de productos AGRO SNACKS)
-- **Lema:** Ingredientes reales — Un crunch diferente.
-- **Fabricante y titular:** AGRO OSCOR S.A.S.
-- **NIT:** 901.657.781-2
-- **D-U-N-S:** 98-724-9766
-- **Planta:** Castilla, Pácora, Caldas, Colombia
-- **Operación:** Caldas (Pácora, Castilla) y Antioquia (Medellín, Girardota)
-- **Tienda en línea:** https://snagrocks.com
-- **Sitio corporativo:** https://www.agrosnacks.com.co
-- **Teléfono y WhatsApp comercial:** +57 300 240 4788
+## Empresa
+
+- **Marca principal:** SNAGROCKS (en el empaque la acompañan «Home Made» y el logo A|S AGRO SNACKS)
+- **Familia de productos:** AGRO SNACKS
+- **Lema:** Ingredientes reales — un crunch diferente
+- **Empresa propietaria:** AGRO OSCOR S.A.S., empresa familiar colombiana
+- **NIT:** 901.657.781-2 · **D-U-N-S:** 98-724-9766
+- **Planta:** Castilla, corregimiento de Pácora (Caldas), Colombia
+- **Tienda en línea:** https://snagrocks.com (el dominio anterior, agrosnacks.com.co, redirige aquí)
+- **Correo comercial:** afoc@agrosnacks.com.co
+- **Mayoristas, exportación y marca blanca:** https://snagrocks.com/pages/mayoristas-exportacion
 - **Redes:** Instagram @homemadesnackscol · TikTok @agrosnackscol · Facebook agrosnackscol · Pinterest agrooscor2023
 
 ## Productos
 
-SNAGROCKS elabora snacks fritos a partir de una sola materia prima del campo colombiano por referencia, o de mezclas definidas:
+- **Plátano verde:** chips natural, limón y ají criollo (85 g); chips con sal marina (70 g); chips en tarro (300 g); fósforos en bolsa y en tarro (200, 425, 850 y 1.133 g)
+- **Plátano maduro:** chips (85 g); chips con sal marina (70 g); chips con aceite de coco y girasol (85 g)
+- **Mix de plátano verde y maduro:** chips (85 g)
+- **Yuca, batata y arracacha:** chips (85 g) y chips con sal marina (70 g)
+- **Taro:** chips (85 g)
+- **Papa:** chips natural, BBQ, limón y ají criollo (85 g); chips con sal marina (70 g); fósforos de papa Capira (500 g)
 
-- Plátano verde: chips y fósforo
-- Plátano maduro: chips y fósforo
-- Mix de plátano verde y maduro
-- Yuca
-- Batata
-- Arracacha
-- Papa: chips y fósforo
-- Taro
-- Mix andino de batata, yuca y arracacha
+Precios y disponibilidad vigentes: https://snagrocks.com/collections/all
 
-**Presentaciones:** bolsa transparente, bolsa metalizada y tarro, en varios gramajes. La presentación de lanzamiento es la bolsa de 70 g.
+## Ingredientes y características
 
-## Características
-
-- Ingredientes naturales
-- Sin gluten
-- Sin lactosa
-- Sin soya
-- Sin azúcar añadida
-- Fritos en mezcla de aceite de girasol y palma
+- Lista de ingredientes corta: el vegetal, sal marina de Montemar y aceite refinado (90 % girasol y 10 % oleína de palma).
+- Excepción: los chips de plátano maduro con coco usan 50 % girasol y 50 % coco, refinados.
+- Sin gluten, sin lácteos y sin soya, bajo programa de control de alérgenos.
+- Sin azúcar añadido: el azúcar presente es el natural del ingrediente.
+- Sin conservantes artificiales.
+- Sin sellos de advertencia según la Ley 2120 de 2021.
 
 ## Registros y certificaciones
 
-- **Colombia:** Notificación Sanitaria INVIMA NSA-2577-2025, aplicable a toda la línea.
-- **Estados Unidos:** planta con registro de instalación de alimentos ante la FDA. El registro ante la FDA no equivale a una aprobación de la FDA.
+- **Colombia:** notificación sanitaria INVIMA NSA-2577-2025.
+- **Estados Unidos:** registro de instalación de alimentos ante la FDA. El registro ante la FDA no equivale a una aprobación de la FDA.
+- **KOSHER:** certificación en trámite para la línea de plátano.
 
 ## Preguntas frecuentes
 
 **¿Qué es SNAGROCKS?**
-Una marca colombiana de snacks de plátano y tubérculos andinos, producida por AGRO OSCOR S.A.S. en Pácora, Caldas.
+La marca principal de AGRO OSCOR S.A.S., empresa familiar colombiana que produce chips y fósforos de plátano, yuca, batata, arracacha, taro y papa en su planta de Pácora, Caldas.
 
-**¿De qué están hechos los snacks SNAGROCKS?**
-De plátano verde, plátano maduro, yuca, batata, arracacha, papa o taro, fritos en mezcla de aceite de girasol y palma.
+**¿Qué relación tiene con AGRO SNACKS?**
+AGRO SNACKS identifica la familia de productos. Por eso el empaque lleva el sello SNAGROCKS junto al logo A|S AGRO SNACKS.
 
 **¿Los snacks SNAGROCKS tienen gluten?**
-No. Toda la línea es sin gluten, sin lactosa y sin soya.
+No. Son sin gluten, sin lácteos y sin soya. Si tienes una alergia severa, revisa la etiqueta de cada producto.
 
-**¿Tienen azúcar añadida?**
-No. Ninguna referencia lleva azúcar añadida; el dulzor del plátano maduro y la batata es propio de la materia prima.
-
-**¿Qué es la arracacha?**
-Una raíz andina cultivada en Colombia, de sabor entre la zanahoria y el apio. SNAGROCKS la ofrece en chips y en el mix andino.
+**¿Tienen azúcar añadido?**
+No. El dulzor del plátano maduro y la batata es el natural del ingrediente.
 
 **¿Dónde se compran?**
-En línea en snagrocks.com, con envíos en Colombia. Tiendas y distribuidores pueden escribir al WhatsApp +57 300 240 4788.
+En snagrocks.com, con envíos a toda Colombia. Despacho el siguiente día hábil después de confirmar el pago; entrega de 1 a 2 días hábiles en ciudades principales y de 3 a 4 en zonas rurales.
 
-**¿Exportan?**
-Sí. AGRO OSCOR S.A.S. ha exportado a Panamá, México, Cuba, Venezuela y Surinam, y produce marca propia (*private label*) para terceros.
-
-**¿Dónde se fabrican?**
-En la planta de AGRO OSCOR S.A.S. en Castilla, corregimiento de Pácora, Caldas, Colombia.
+**¿Venden al por mayor, exportan o hacen marca blanca?**
+Sí a las tres. AGRO OSCOR S.A.S. tiene experiencia exportadora en Latinoamérica y el Caribe, incluidos Panamá, México y Surinam. Contacto: afoc@agrosnacks.com.co.

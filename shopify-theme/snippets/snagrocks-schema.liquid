@@ -1,8 +1,8 @@
 {%- comment -%}
-  Datos estructurados (schema.org, JSON-LD) de la marca SNAGROCKS para buscadores y asistentes de IA.
-  Uso: en layout/theme.liquid, justo antes de </head>, agrega:  {% render 'snagrocks-schema' %}
-  Solo describe la organización, la marca y el sitio. Los datos de cada producto (precio, disponibilidad)
-  los genera Savor por su cuenta con el filtro structured_data; no se duplican aquí.
+  Datos estructurados (schema.org, JSON-LD) de la empresa y la marca para buscadores y asistentes de IA.
+  Uso: en layout/theme.liquid, justo antes de </head>:  {% render 'snagrocks-schema' %}
+  Reemplaza el bloque Organization que antes estaba escrito a mano en theme.liquid.
+  Los datos de cada producto los genera Savor con el filtro structured_data; no se duplican aquí.
 {%- endcomment -%}
 <script type="application/ld+json">
 {
@@ -13,36 +13,38 @@
       "@id": "{{ shop.url }}/#organization",
       "name": "AGRO OSCOR S.A.S.",
       "legalName": "AGRO OSCOR S.A.S.",
-      "taxID": "901657781-2",
-      "duns": "987249766",
+      "alternateName": ["SNAGROCKS", "AGRO SNACKS"],
       "url": "{{ shop.url }}",
       {%- if settings.logo %}
       "logo": {{ settings.logo | image_url: width: 600 | prepend: 'https:' | json }},
       {%- endif %}
-      "description": "Empresa agroindustrial colombiana que produce los snacks SNAGROCKS de plátano y tubérculos andinos en su planta de Castilla, Pácora (Caldas).",
+      "taxID": "901.657.781-2",
+      "duns": "987249766",
+      "email": "afoc@agrosnacks.com.co",
+      "description": "Empresa familiar colombiana propietaria de la marca SNAGROCKS. AGRO SNACKS identifica su familia de snacks del agro colombiano: chips y fósforos de plátano, yuca, batata, arracacha, taro y papa, elaborados en su planta de Castilla, Pácora (Caldas). Notificación sanitaria INVIMA NSA-2577-2025 y registro de instalación ante la FDA.",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Pácora",
+        "addressLocality": "Castilla, Pácora",
         "addressRegion": "Caldas",
         "addressCountry": "CO"
       },
+      "areaServed": { "@type": "Country", "name": "Colombia" },
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+57-300-240-4788",
         "contactType": "sales",
-        "areaServed": "CO",
+        "email": "afoc@agrosnacks.com.co",
+        "url": "{{ shop.url }}/pages/mayoristas-exportacion",
         "availableLanguage": ["es", "en"]
       },
       "brand": [
         { "@id": "{{ shop.url }}/#brand" },
-        { "@type": "Brand", "name": "AGRO SNACKS", "url": "https://www.agrosnacks.com.co" }
+        { "@type": "Brand", "name": "AGRO SNACKS" }
       ],
       "sameAs": [
-        "https://www.agrosnacks.com.co",
-        "https://www.instagram.com/homemadesnackscol",
+        "https://www.instagram.com/homemadesnackscol/",
         "https://www.tiktok.com/@agrosnackscol",
         "https://www.facebook.com/agrosnackscol",
-        "https://co.pinterest.com/agrooscor2023",
+        "https://co.pinterest.com/agrooscor2023/",
         "https://www.linkedin.com/in/agro-oscor-agro-snacks-516886395",
         "https://github.com/agrooscor2023-cmd/snagrocks"
       ]
@@ -51,8 +53,8 @@
       "@type": "Brand",
       "@id": "{{ shop.url }}/#brand",
       "name": "SNAGROCKS",
-      "slogan": "Ingredientes reales — Un crunch diferente.",
-      "description": "Snacks colombianos de plátano verde, plátano maduro, yuca, batata, arracacha, papa y taro. Naturales, sin gluten, sin lactosa, sin soya y sin azúcar añadida.",
+      "slogan": "Ingredientes reales — un crunch diferente",
+      "description": "Snacks colombianos de plátano, yuca, batata, arracacha, taro y papa, con sal marina y aceite de girasol y oleína de palma. Sin gluten, sin lácteos, sin soya, sin azúcar añadido y sin conservantes artificiales.",
       "url": "{{ shop.url }}"
     },
     {

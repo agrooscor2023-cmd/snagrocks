@@ -1,29 +1,17 @@
 # SNAGROCKS
 
-> SNAGROCKS is a Colombian snack brand of plantain and Andean root chips (green plantain, ripe plantain, cassava, sweet potato, arracacha, potato, taro), made by AGRO OSCOR S.A.S. at its plant in Castilla, Pácora (Caldas, Colombia). Natural, gluten-free, lactose-free, soy-free, no added sugar. Part of the AGRO SNACKS product family.
+> SNAGROCKS is the main brand of AGRO OSCOR S.A.S., a Colombian family company that makes chips and matchstick fries of plantain, cassava, sweet potato, arracacha, taro and potato at its plant in Castilla, Pácora (Caldas, Colombia). Gluten-free, dairy-free, soy-free, no added sugar, no artificial preservatives. Part of the AGRO SNACKS product family.
 
-SNAGROCKS es una marca colombiana de snacks de plátano y tubérculos andinos, producida por AGRO OSCOR S.A.S. (NIT 901.657.781-2) en Pácora, Caldas. Lema: «Ingredientes reales — Un crunch diferente». Registro sanitario INVIMA NSA-2577-2025. Planta con registro de instalación alimentaria ante la FDA de EE. UU.
+SNAGROCKS es la marca principal de AGRO OSCOR S.A.S. (NIT 901.657.781-2). Lema: «Ingredientes reales — un crunch diferente». Notificación sanitaria INVIMA NSA-2577-2025 y registro de instalación ante la FDA. La versión completa, con productos, precios y envíos, está en la tienda.
 
-## Tienda y contacto
+## Fuente oficial
 
-- [Tienda en línea SNAGROCKS](https://snagrocks.com): compra directa con envíos en Colombia
-- [AGRO SNACKS, sitio corporativo](https://www.agrosnacks.com.co): empresa, exportación y marca propia
-- WhatsApp comercial: +57 300 240 4788
-- [Instagram @homemadesnackscol](https://instagram.com/homemadesnackscol)
+- [llms.txt completo de la tienda](https://snagrocks.com/llms.txt): productos, precios, envíos y contacto
+- [Tienda SNAGROCKS](https://snagrocks.com): compra en línea con envíos a toda Colombia
+- [Preguntas frecuentes](https://snagrocks.com/pages/preguntas-frecuentes)
+- [Mayoristas, exportación y marca blanca](https://snagrocks.com/pages/mayoristas-exportacion): afoc@agrosnacks.com.co
 
 ## Ficha de marca
 
-- [Ficha de marca (español)](https://github.com/agrooscor2023-cmd/snagrocks/blob/main/marca/ficha-de-marca.md): productos, características, registros y preguntas frecuentes
-- [Brand facts (English)](https://github.com/agrooscor2023-cmd/snagrocks/blob/main/marca/brand-facts.md): products, attributes, registrations and FAQ
-
-## Productos
-
-- Plátano verde (chips y fósforo)
-- Plátano maduro (chips y fósforo)
-- Mix de plátano verde y maduro
-- Yuca
-- Batata
-- Arracacha
-- Papa (chips y fósforo)
-- Taro
-- Mix andino de batata, yuca y arracacha
+- [Ficha de marca (español)](https://github.com/agrooscor2023-cmd/snagrocks/blob/main/marca/ficha-de-marca.md)
+- [Brand facts (English)](https://github.com/agrooscor2023-cmd/snagrocks/blob/main/marca/brand-facts.md)
